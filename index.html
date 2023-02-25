@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main-carousel.css">
+    <link rel="stylesheet" href="main-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/132f54ee8c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container grid-container">
+        <div class="row">
+            <div class="product grid-item">
+                <div id="slider-zoom" class="positive-gallery-slider">
+                  
+                        <div class="side-img product-small-img">
+                            <a  href="#f" ><img  class="small-preview bt" src="img/img-1.jpeg"></a>
+                            <a  href="#s"><img  class="small-preview bt" src="img/img-2.jpeg"></a>
+                        </div>
+
+                    <div class="zoom-image" onclick="openModal();currentSlide(1)">
+                        <div class="img-icon">
+                            <a href="#">
+                                <img src="img/heart.png"  style="width: 30px; " alt="">
+                            </a>
+                        </div>
+                    </div>
+                  
+                    <div id="myModal" class="modal">
+                        
+                        <div value="Unlock" onclick="haveflow()" class="close-btn">
+                            
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
+                        </div>
+                        <div class="modal-content">
+    
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 5</div>
+                                <img src="img/img-1.jpeg" style="width:100%">
+                            </div>
+    
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 5</div>
+                                <img src="img/img-2.jpeg" style="width:100%">
+                            </div>
+    
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 5</div>
+                                <img src="img/img-3.jpeg" style="width:100%">
+                            </div>
+    
+    
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+                <div class="information grid-item">
+                    <div class="title-head">
+                        <h1 class="d-row" style="margin: 0;">
+                           Polo
+                        </h1>
+                        <p class="d-flex">
+                            Stok Kodu: MA-B5869-0002
+                        </p>
+                    </div>
+                    
+                    <div class="product-information">
+
+                        <div class="price">
+                            8.995,00 TL
+                        </div>
+                        <div id="myDIV" class="size">
+                            <button class="btn active">36</button>
+                            <button class="btn">38</button>
+                            <button class="btn">40</button>
+                            <button class="btn">42</button>
+                        </div>
+                        <div class="rows">
+                            <div class="pieces">
+                                
+                                <button class="wp-button">
+                                    <a
+                                        href="https://api.whatsapp.com/send/?phone=994707069020&text&type=phone_number&app_absent=0">
+                                        <span>
+                                            <img src="img/whatsapp.png" style="width:20px" alt="">
+                                            Whatsaap</span>
+                                    </a>
+                                </button>
+                                <div class="product-user-buttons">
+                                    <div class="product-cargo-free">
+                                        <button class="btn-cargo">
+                                            <img src="img/gift.png" style="width: 20px; height: 20px;" alt=""></img>
+                                            <span> Kargo Bedava</span>
+                                        </button>
+        
+                                    </div>
+                                </div>
+                          
+                            </div>
+                        </div>
+                 
+                        <div class="info-product">
+                            <h1>Haqqında</h1>
+     
+                            <table>
+                                <tr>
+                                  <td><i class="fa-solid fa-check"></i> Yeni - Bəli</td>
+                                  <td><i class="fa-solid fa-check"></i> İstehsal - Türkiyə</td>
+
+                                </tr>
+                                <tr>
+                                  <td><i class="fa-solid fa-check"></i> Model - Santa Barbara</td>
+
+                                  <td><i class="fa-solid fa-check"></i> Rəng - G</td>
+                                </tr>
+                              
+                              </table>
+                            <ul>
+                                <li><span class="sp">qutusu ilə birlikdə</span></li>
+    
+                            </ul>
+                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./main.js">
+    </script>
+ 
+    <script>
+        positiveZoom.init('#slider-zoom')
+    </script>
+
+
+
+
+</body>
+
+</html>
